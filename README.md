@@ -16,6 +16,9 @@ diner provides a simple API to a specific subset of Redis actions, namely:
 With these actions, diner can be used as a *counter and ranking service over HTTP*. diner speaks JSON, 
 but it'd be trivial to add XML support.
 
+diner is built on Sinatra, so it can be started locally with Sinatra on localhost and port 4567. 
+diner's tests run against a local running instance of Redis; the tests will create a few test keys.
+
 api
 -----
 
