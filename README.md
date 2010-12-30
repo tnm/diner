@@ -42,3 +42,7 @@ with parameters: `command=increment, element=bigelement, score=20.0`
     
     GET /foo?command=score&element=bar
 
+clients
+--------
+
+You can check out a Python client at: [https://github.com/tnm/pydiner](https://github.com/tnm/pydiner).
