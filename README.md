@@ -46,3 +46,8 @@ clients
 --------
 
 You can check out a Python client at: [https://github.com/tnm/pydiner](https://github.com/tnm/pydiner).
+
+license
+--------
+
+bsd
