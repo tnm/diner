@@ -22,7 +22,9 @@ diner's tests run against a local running instance of Redis; the tests will crea
 api
 -----
 
-All interaction with diner occurs at the key resource level, accessed via either GET or POST at `/:key`. 
+All interaction with diner occurs at the key resource level, accessed via either GET or POST at `/:key`.
+All the keys that Diner generates will be prepended with `diner:` for namespacing; however, interaction with the 
+keys happens directly on the specified name (e.g., you interface with 'foo', not 'diner:foo').
 
 Using the key `foo` as an example:
 
