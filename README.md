@@ -13,8 +13,8 @@ diner provides a simple API to a specific subset of Redis actions, namely:
 * returning the rank of a sorted set's element
 * returning the score of a sorted set's element
 
-With these actions, diner can be used as a *counter and ranking service over HTTP*. diner speaks JSON, 
-but it'd be trivial to add XML support.
+With these actions, diner can be used to support a **counter and ranking service over HTTP**. 
+diner speaks JSON, but it'd be trivial to add XML support.
 
 diner is built on Sinatra, so it can be started locally with Sinatra on localhost and port 4567. 
 diner's tests run against a local running instance of Redis; the tests will create a few test keys.
@@ -28,19 +28,21 @@ keys happens directly on the specified name (e.g., you interface with 'foo', not
 
 Using the key `foo` as an example:
 
-** Increment an element ** 
+**Increment an element**
+
     POST /foo
+
 with parameters: `command=increment, element=bigelement, score=20.0`
 
-** Get the cardinality of a sorted set **
+**Get the cardinality of a sorted set**
 
     GET /foo?command=card'
 
-** Get the rank of an element of a sorted set **
+**Get the rank of an element of a sorted set**
 
     GET /foo?command=rank&element=bar
 
-** Get the score of an element of a sorted set **
+**Get the score of an element of a sorted set**
     
     GET /foo?command=score&element=bar
 
