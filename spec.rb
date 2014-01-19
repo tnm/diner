@@ -44,4 +44,3 @@ describe "the Diner interface" do
     last_response.body.should == "{\"element\":\"bar2\",\"incremented_by\":\"20.0\"}"
   end
 end
-
